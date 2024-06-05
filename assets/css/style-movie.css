@@ -1,0 +1,123 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-shadow: 0 0 1px currentColor;
+}
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+    outline-color: transparent;
+    border: unset;
+    background-color: transparent;
+}
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.btn {
+    font-family: "Poppins", sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    line-height: 38.5px;
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+body {
+    background: var(--Colors-primary-dark, #080808);
+}
+/* ------------------------------------------------------Header------------------------------------------------------------- */
+.header {
+    background: rgba(58, 58, 58, 0.4);
+    backdrop-filter: blur(5px);
+}
+.header__inner {
+    padding: 23px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo-wrap {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+.header__logo-wrap {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--Colors-Secondray-dark, #f2eded);
+    font-size: 3.2rem;
+}
+.navbar__list {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.navbar__link {
+    color: var(--Colors-Secondray-dark, #f2eded);
+
+    font-size: 2.4rem;
+    padding: 10px;
+}
+.navbar__link:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: rgba(255, 255, 255, 0.4);
+}
+.navbar__link--active {
+    color: #e50914;
+}
+.header__sign-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+.header__search {
+    pointer-events: none;
+    height: 44px;
+    position: relative;
+}
+.header__search::placeholder {
+    right: 0;
+    top: 0;
+    position: absolute;
+    content: url(../icon/search.svg);
+}
+.login {
+    color: #fff;
+    font-size: 2.4rem;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.login:hover {
+    color: rgba(255, 255, 255, 0.4);
+}
+.sign-up {
+    font-weight: 600;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 2.4rem;
+}
+.sign-up:hover {
+    background: rgba(58, 58, 58, 0.4);
+    backdrop-filter: blur(5px);
+}
