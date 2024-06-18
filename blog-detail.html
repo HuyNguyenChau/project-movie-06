@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Title -->
+        <title>NIKAFLIM</title>
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/style-blog-detail.css" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Font-styles -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- ----------------------------------------------Header---------------------------------------------------------- -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <a href="" class="header__logo-wrap">
+                        <svg
+                            class="header__logo"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="46"
+                            viewBox="0 0 25 46"
+                            fill="none"
+                        >
+                            <path
+                                d="M16.0863 0.0358887L16.0684 10.0637L16.0505 20.0915L15.2268 17.7636V17.7577L14.1583 40.0815C15.2089 43.0421 15.7699 44.6239 15.7759 44.6298C15.7819 44.6358 16.3788 44.6716 17.101 44.7074C19.2856 44.8149 21.9955 45.0477 24.0548 45.3043C24.5323 45.364 24.9382 45.3939 24.9681 45.37C24.9979 45.3461 25.0039 35.1392 24.9979 22.682L24.98 0.0358887H16.0863Z"
+                                fill="#B1060F"
+                            />
+                            <path
+                                d="M0 0.0059693V22.676C0 35.1451 0.0119379 45.358 0.0298447 45.3759C0.0477515 45.3938 0.817744 45.3162 1.7489 45.2147C2.68005 45.1132 3.96338 44.9819 4.60205 44.9282C5.58096 44.8446 8.51767 44.6596 8.85193 44.6536C8.95341 44.6536 8.95938 44.1463 8.97131 35.0496L8.98922 25.4456L9.69952 27.4512C9.80696 27.7615 9.84278 27.857 9.95022 28.1615L11.0187 5.84359C10.7918 5.20491 10.9112 5.53918 10.6546 4.81097C9.78309 2.34579 9.04294 0.262633 9.0131 0.16713L8.95341 0H0V0.0059693Z"
+                                fill="#B1060F"
+                            />
+                            <path
+                                d="M16.0863 0.0358887L16.0684 10.0637L16.0505 20.0915L15.2268 17.7636V17.7577L14.1583 40.0815C15.2089 43.0421 15.7699 44.6239 15.7759 44.6298C15.7819 44.6358 16.3788 44.6716 17.101 44.7074C19.2856 44.8149 21.9955 45.0477 24.0548 45.3043C24.5323 45.364 24.9382 45.3939 24.9681 45.37C24.9979 45.3461 25.0039 35.1392 24.9979 22.682L24.98 0.0358887H16.0863Z"
+                                fill="#B1060F"
+                            />
+                            <path
+                                d="M0 0.0059693V22.676C0 35.1451 0.0119379 45.358 0.0298447 45.3759C0.0477515 45.3938 0.817744 45.3162 1.7489 45.2147C2.68005 45.1132 3.96338 44.9819 4.60205 44.9282C5.58096 44.8446 8.51767 44.6596 8.85193 44.6536C8.95341 44.6536 8.95938 44.1463 8.97131 35.0496L8.98922 25.4456L9.69952 27.4512C9.80696 27.7615 9.84278 27.857 9.95022 28.1615L11.0187 5.84359C10.7918 5.20491 10.9112 5.53918 10.6546 4.81097C9.78309 2.34579 9.04294 0.262633 9.0131 0.16713L8.95341 0H0V0.0059693Z"
+                                fill="#B1060F"
+                            />
+                            <path
+                                d="M0 0.0059693V12.7317L8.96535 36.512C8.96535 35.9688 8.96535 35.6704 8.97132 35.0496L8.98922 25.4456L9.69953 27.4512C13.639 38.625 15.758 44.6178 15.7699 44.6298C15.7759 44.6357 16.3728 44.6715 17.095 44.7074C19.2797 44.8148 21.9896 45.0476 24.0489 45.3043C24.5264 45.3639 24.9323 45.3938 24.9621 45.3699C24.98 45.352 24.992 40.35 24.992 33.2888L16.0744 7.63427L16.0684 10.0636L16.0505 20.0914L15.2268 17.7636C14.421 15.4894 13.8838 13.9673 10.6426 4.81097C9.77115 2.34579 9.03101 0.262633 9.00116 0.16713L8.94147 0H0V0.0059693Z"
+                                fill="url(#paint0_radial_2010_4598)"
+                            />
+                            <path
+                                d="M0 0.0059693L8.98325 25.4635V25.4516L9.69356 27.4571C13.639 38.625 15.758 44.6178 15.7699 44.6298C15.7759 44.6357 16.3728 44.6715 17.095 44.7074C19.2797 44.8148 21.9896 45.0476 24.0489 45.3043C24.5204 45.3639 24.9323 45.3938 24.9561 45.3699L16.0505 20.0855V20.0914L15.2268 17.7636C14.421 15.4894 13.8838 13.9673 10.6426 4.81097C9.77115 2.34579 9.031 0.262633 9.00116 0.16713L8.94147 0H4.47074L0 0.0059693Z"
+                                fill="#E50914"
+                            />
+                            <defs>
+                                <radialGradient
+                                    id="paint0_radial_2010_4598"
+                                    cx="0"
+                                    cy="0"
+                                    r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(12.0776 22.4259) rotate(-19.1007) scale(1.64712 60.3363)"
+                                >
+                                    <stop />
+                                    <stop offset="1" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        NIKAFILM
+                    </a>
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="index.html" class="navbar__link"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="movie.html" class="navbar__link"
+                                    >Movie</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="tv-show.html" class="navbar__link"
+                                    >Tv Shows</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a
+                                    href="blog.html"
+                                    class="navbar__link navbar__link--active"
+                                    >Blog</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="payment.html" class="navbar__link"
+                                    >Buy Account</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Sign in / Sign up / Search -->
+                    <div class="header__sign-wrap">
+                        <input
+                            type="search"
+                            name=""
+                            id=""
+                            placeholder=""
+                            class="header__search"
+                        />
+                        <a href="#!" class="login">Login</a>
+                        <a href="#!" class="sign-up btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- ----------------------------------Blog-detail----------------------------------------------- -->
+            <section class="blog-detail">
+                <div class="container">
+                    <div class="blog-detail__inner">
+                        <h2 class="blog-detail__title">Eminem</h2>
+                        <img
+                            src="./assets/img/blog-detail-1.jpg"
+                            alt=""
+                            class="blog-detail__primary-img"
+                        />
+                        <p class="blog-detail__desc">
+                            <i class="blod__desc--artist"
+                                >Marshall Bruce Mathers III</i
+                            >
+                            (born October 17, 1972), known professionally as
+                            Eminem (also stylized as EMINƎM), is an American
+                            rapper. He is credited with popularizing hip hop in
+                            Middle America and is regarded as one of the
+                            greatest rappers of all time.[3] His global success
+                            is considered to have broken racial barriers to the
+                            acceptance of white rappers in popular music.
+                        </p>
+                        <p class="blog-detail__desc">
+                            While much of his transgressive work during the late
+                            1990s and early 2000s made him a controversial
+                            figure, he came to be a representation of popular
+                            angst of the American underclass and has been cited
+                            as influencing many musical artists. His best-known
+                            songs include "My Name Is", "The Real Slim Shady",
+                            "The Way I Am", "Stan", "Without Me", "Lose
+                            Yourself", "Mockingbird", "Not Afraid", and "Love
+                            the Way You Lie".
+                        </p>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="blog-detail__item">
+                                    <img
+                                        src="./assets/img/blog-detail-2.jpg"
+                                        alt=""
+                                        class="blog-detail__item-img"
+                                    />
+                                    <p class="blog-detail__desc">
+                                        After the release of his debut album
+                                        Infinite (1996) and the extended play
+                                        Slim Shady EP (1997), Eminem signed with
+                                        Dr. Dre's Aftermath Entertainment and
+                                        subsequently achieved mainstream
+                                        popularity in 1999 with The Slim Shady
+                                        LP. His next two releases, The Marshall
+                                        Mathers LP (2000) and The Eminem Show
+                                        (2002), were worldwide successes and
+                                        were nominated for the Grammy Award for
+                                        Album of the Year, the latter becoming
+                                        the best-selling album worldwide of 2002
+                                    </p>
+                                    <p class="blog-detail__item-dmy">
+                                        Sep 23, 2018, 8:43AM
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="blog-detail__item">
+                                    <img
+                                        src="./assets/img/blog-detail-3.jpg"
+                                        alt=""
+                                        class="blog-detail__item-img"
+                                    />
+                                    <p class="blog-detail__desc">
+                                        After the release of his next album,
+                                        Encore (2004), Eminem went on hiatus,
+                                        largely due to a prescription drug
+                                        addiction. He returned to the music
+                                        industry with the releases of Relapse
+                                        (2009) and Recovery (2010), the latter
+                                        becoming the best-selling album
+                                        worldwide of 2010. He then released the
+                                        US number-one albums The Marshall
+                                        Mathers LP 2 (2013), Revival (2017),
+                                        Kamikaze (2018), and Music to Be
+                                        Murdered By (2020). A twelfth studio
+                                        album, The Death of Slim Shady (Coup de
+                                        Grâce), is slated to be released in
+                                        mid-2024.
+                                    </p>
+                                    <p class="blog-detail__item-dmy">
+                                        May 08, 2021, 9:55AM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-detail__row-bottom">
+                            <div class="blog-detail__bottom-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="50"
+                                    height="46"
+                                    viewBox="0 0 50 46"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M25.0011 3.90567C22.2696 1.39407 18.6944 0.000116703 14.9837 0C13.0197 0.00204484 11.0755 0.392471 9.26295 1.14881C7.45041 1.90515 5.80533 3.01246 4.42239 4.40704C-1.47622 10.3307 -1.47371 19.596 4.42741 25.4946L22.8076 43.8748C23.2338 44.6244 24.056 45.1082 25.0011 45.1082C25.3892 45.1044 25.7709 45.0097 26.1157 44.8316C26.4605 44.6536 26.7588 44.3971 26.9865 44.0829L45.5748 25.4946C51.4759 19.5935 51.4759 10.3307 45.5698 4.39701C44.1875 3.005 42.5438 1.89993 40.733 1.14534C38.9222 0.390741 36.9802 0.00150312 35.0185 0C31.3079 0.000606554 27.7328 1.39449 25.0011 3.90567ZM42.0251 7.94169C45.9433 11.8799 45.9458 18.0318 42.0301 21.95L25.0011 38.979L7.97209 21.95C4.05639 18.0318 4.0589 11.8799 7.96707 7.95172C9.87228 6.05654 12.3641 5.01369 14.9837 5.01369C17.6034 5.01369 20.0852 6.05654 21.9753 7.9467L23.2288 9.20013C23.4614 9.43313 23.7376 9.61798 24.0417 9.7441C24.3459 9.87022 24.6719 9.93514 25.0011 9.93514C25.3303 9.93514 25.6563 9.87022 25.9604 9.7441C26.2646 9.61798 26.5408 9.43313 26.7734 9.20013L28.0269 7.9467C31.8172 4.16387 38.2398 4.1739 42.0251 7.94169Z"
+                                        fill="#F2EDED"
+                                    />
+                                </svg>
+                                <p class="blog-detail__bottom-desc">
+                                    <b class="blog-detail__bottom-desc--bold"
+                                        >11.11 k</b
+                                    >
+                                    Liked This Post
+                                </p>
+                            </div>
+                            <div class="blog-detail__bottom-item">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="45"
+                                    height="45"
+                                    viewBox="0 0 45 45"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M40.5 0H4.5C2.01825 0 0 2.01825 0 4.5V45L11.9993 36H40.5C42.9818 36 45 33.9818 45 31.5V4.5C45 2.01825 42.9818 0 40.5 0ZM40.5 31.5H10.5007L4.5 36V4.5H40.5V31.5Z"
+                                        fill="#F2EDED"
+                                    />
+                                </svg>
+                                <p class="blog-detail__bottom-desc">
+                                    <b class="blog-detail__bottom-desc--bold"
+                                        >1.2 k</b
+                                    >
+                                    comments
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ----------------------------------Comments----------------------------------------------- -->
+            <section class="comments">
+                <div class="container">
+                    <h3 class="comments__title">Comments</h3>
+                    <!-- Comments 1 -->
+                    <div class="comments__item">
+                        <div class="comments__row">
+                            <div class="comments__wrap-info">
+                                <img
+                                    src="./assets/img/comments-1.jpg"
+                                    alt=""
+                                    class="comments__avatar"
+                                />
+                                <div class="comments__detail-wrap">
+                                    <p class="comments__name">John Carter</p>
+                                    <p class="comments__status">Now</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form
+                            action=""
+                            method="get"
+                            rel="noopener"
+                            class="comments__form"
+                        >
+                            <textarea
+                                name="Comments"
+                                id="comments"
+                                class="comments__input"
+                                maxlength="200"
+                                placeholder="Write Your Comment Here..."
+                            ></textarea>
+                            <button type="submit" class="comments__submit">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="41"
+                                    height="38"
+                                    viewBox="0 0 41 38"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M39.6528 16.8666L3.93784 0.199943C3.57824 0.0312267 3.17769 -0.032667 2.78287 0.0157087C2.38806 0.0640844 2.01524 0.222737 1.70786 0.473176C1.40049 0.723615 1.17122 1.05553 1.04678 1.43022C0.922343 1.80492 0.907856 2.20698 1.00501 2.58953L5.07862 18.752L1.00501 34.9145C0.906947 35.2972 0.920801 35.6997 1.04495 36.0749C1.1691 36.45 1.39841 36.7824 1.70607 37.033C2.01372 37.2837 2.38699 37.4423 2.78221 37.4903C3.17744 37.5383 3.57828 37.4737 3.93784 37.3041L39.6528 20.6374C40.0137 20.4692 40.3189 20.2026 40.5327 19.8687C40.7464 19.5348 40.8599 19.1475 40.8599 18.752C40.8599 18.3565 40.7464 17.9692 40.5327 17.6354C40.3189 17.3015 40.0137 17.0349 39.6528 16.8666ZM6.15427 31.6624L7.91691 24.6687L19.8499 18.752L7.91691 12.8354L6.15427 5.84161L33.8229 18.752L6.15427 31.6624Z"
+                                        fill="#808080"
+                                    />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- Comments 2 -->
+                    <div class="comments__item">
+                        <div class="comments__row">
+                            <div class="comments__wrap-info">
+                                <img
+                                    src="./assets/img/comments-2.jpg"
+                                    alt=""
+                                    class="comments__avatar"
+                                />
+                                <div class="comments__detail-wrap">
+                                    <p class="comments__name">Dr. Umar</p>
+                                    <p class="comments__status">29 may</p>
+                                </div>
+                            </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                viewBox="0 0 30 30"
+                                fill="none"
+                            >
+                                <path
+                                    d="M21.2167 0H8.78333L0 8.78333V21.2167L8.78333 30H21.2167L30 21.2167V8.78333L21.2167 0ZM26.6667 19.8333L19.8333 26.6667H10.1667L3.33333 19.8333V10.1667L10.1667 3.33333H19.8333L26.6667 10.1667V19.8333Z"
+                                    fill="#808080"
+                                />
+                                <path
+                                    d="M16.6668 6.66675H13.3335V16.6667H16.6668V6.66675Z"
+                                    fill="#808080"
+                                />
+                                <path
+                                    d="M16.6668 20H13.3335V23.3333H16.6668V20Z"
+                                    fill="#808080"
+                                />
+                            </svg>
+                        </div>
+                        <p class="comments__desc">
+                            When I look at the responses from America’s
+                            Caucasian community over this issue of Eminem being
+                            the G.O.A.T. of Hip Hop—and let me say this: I have
+                            nothing personal against Eminem," Umar prefaced
+                            before launching into his diatribe, which you can
+                            watch below.
+                        </p>
+                        <div class="comments__row-bottom">
+                            <div class="comments__bottom-wrap">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="41"
+                                    height="38"
+                                    viewBox="0 0 41 38"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M20.5009 3.63209C18.2611 1.57195 15.3294 0.428563 12.2867 0.428467C10.6762 0.430144 9.08191 0.750391 7.59562 1.37078C6.10934 1.99116 4.76037 2.89944 3.62636 4.04334C-1.2105 8.90224 -1.20844 16.5021 3.63047 21.3404L18.7022 36.4168C19.0517 37.0316 19.7259 37.4285 20.5009 37.4285C20.8191 37.4254 21.1322 37.3477 21.4149 37.2016C21.6976 37.0556 21.9422 36.8452 22.1289 36.5875L37.3713 21.3404C42.2102 16.5 42.2102 8.90224 37.3672 4.03511C36.2338 2.89332 34.8859 1.98689 33.4011 1.36793C31.9162 0.748972 30.3237 0.4297 28.7151 0.428467C25.6725 0.428964 22.7409 1.5723 20.5009 3.63209ZM34.4606 6.94264C37.6735 10.173 37.6756 15.219 34.4647 18.4329L20.5009 32.401L6.53711 18.4329C3.32624 15.219 3.3283 10.173 6.533 6.95086C8.09527 5.39635 10.1385 4.54095 12.2867 4.54095C14.4348 4.54095 16.4698 5.39634 18.0198 6.94675L19.0476 7.97487C19.2383 8.16599 19.4649 8.31761 19.7142 8.42106C19.9636 8.52451 20.2309 8.57776 20.5009 8.57776C20.7709 8.57776 21.0382 8.52451 21.2876 8.42106C21.5369 8.31761 21.7635 8.16599 21.9542 7.97487L22.982 6.94675C26.0901 3.84388 31.3566 3.85211 34.4606 6.94264Z"
+                                        fill="#F2EDED"
+                                    />
+                                </svg>
+                                <p class="comments__like-comment">
+                                    Like This Comment
+                                </p>
+                            </div>
+                            <div class="comments__bottom-wrap">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="46"
+                                    height="38"
+                                    viewBox="0 0 46 38"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M22.5359 3.63209C20.0738 1.57195 16.8511 0.428563 13.5063 0.428467C11.7359 0.430144 9.98342 0.750391 8.3496 1.37078C6.71578 1.99116 5.23291 2.89944 3.98633 4.04334C-1.33066 8.90224 -1.3284 16.5021 3.99085 21.3404L20.5587 36.4168C20.9429 37.0316 21.684 37.4285 22.5359 37.4285C22.8857 37.4254 23.2298 37.3477 23.5406 37.2016C23.8515 37.0556 24.1203 36.8452 24.3256 36.5875L41.081 21.3404C46.4002 16.5 46.4002 8.90224 41.0765 4.03511C39.8305 2.89332 38.3488 1.98689 36.7166 1.36793C35.0844 0.748972 33.3338 0.4297 31.5655 0.428467C28.2208 0.428964 24.9983 1.5723 22.5359 3.63209ZM37.8813 6.94264C41.4132 10.173 41.4154 15.219 37.8858 18.4329L22.5359 32.401L7.18602 18.4329C3.65642 15.219 3.65868 10.173 7.1815 6.95086C8.89884 5.39635 11.1449 4.54095 13.5063 4.54095C15.8676 4.54095 18.1047 5.39634 19.8085 6.94675L20.9383 7.97487C21.148 8.16599 21.397 8.31761 21.6712 8.42106C21.9453 8.52451 22.2391 8.57776 22.5359 8.57776C22.8327 8.57776 23.1265 8.52451 23.4007 8.42106C23.6748 8.31761 23.9238 8.16599 24.1335 7.97487L25.2633 6.94675C28.6799 3.84388 34.4692 3.85211 37.8813 6.94264Z"
+                                        fill="#F2EDED"
+                                    />
+                                </svg>
+                                <p class="comments__like-comment">
+                                    Dislike This Comment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Comments 3 -->
+                    <div class="comments__item">
+                        <div class="comments__row">
+                            <div class="comments__wrap-info">
+                                <img
+                                    src="./assets/img/comments-3.jpg"
+                                    alt=""
+                                    class="comments__avatar"
+                                />
+                                <div class="comments__detail-wrap">
+                                    <p class="comments__name">Dr.Dre</p>
+                                    <p class="comments__status">17 aug</p>
+                                </div>
+                            </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="30"
+                                height="30"
+                                viewBox="0 0 30 30"
+                                fill="none"
+                            >
+                                <path
+                                    d="M21.2167 0H8.78333L0 8.78333V21.2167L8.78333 30H21.2167L30 21.2167V8.78333L21.2167 0ZM26.6667 19.8333L19.8333 26.6667H10.1667L3.33333 19.8333V10.1667L10.1667 3.33333H19.8333L26.6667 10.1667V19.8333Z"
+                                    fill="#808080"
+                                />
+                                <path
+                                    d="M16.6668 6.66675H13.3335V16.6667H16.6668V6.66675Z"
+                                    fill="#808080"
+                                />
+                                <path
+                                    d="M16.6668 20H13.3335V23.3333H16.6668V20Z"
+                                    fill="#808080"
+                                />
+                            </svg>
+                        </div>
+                        <p class="comments__desc">
+                            I’m like, 'Oh, OK,' so long story short, I met
+                            Eminem at Jimmy Iovine’s office. We slapped hands,
+                            went to the studio and started recording," said the
+                            former Death Row Records president. "I’m not sure if
+                            anybody knows this, but I think [Eminem's] first
+                            four albums was just me and him and his writing and
+                            his delivery
+                        </p>
+                        <div class="comments__row-bottom">
+                            <div class="comments__bottom-wrap">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="41"
+                                    height="38"
+                                    viewBox="0 0 41 38"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M20.5009 3.63209C18.2611 1.57195 15.3294 0.428563 12.2867 0.428467C10.6762 0.430144 9.08191 0.750391 7.59562 1.37078C6.10934 1.99116 4.76037 2.89944 3.62636 4.04334C-1.2105 8.90224 -1.20844 16.5021 3.63047 21.3404L18.7022 36.4168C19.0517 37.0316 19.7259 37.4285 20.5009 37.4285C20.8191 37.4254 21.1322 37.3477 21.4149 37.2016C21.6976 37.0556 21.9422 36.8452 22.1289 36.5875L37.3713 21.3404C42.2102 16.5 42.2102 8.90224 37.3672 4.03511C36.2338 2.89332 34.8859 1.98689 33.4011 1.36793C31.9162 0.748972 30.3237 0.4297 28.7151 0.428467C25.6725 0.428964 22.7409 1.5723 20.5009 3.63209ZM34.4606 6.94264C37.6735 10.173 37.6756 15.219 34.4647 18.4329L20.5009 32.401L6.53711 18.4329C3.32624 15.219 3.3283 10.173 6.533 6.95086C8.09527 5.39635 10.1385 4.54095 12.2867 4.54095C14.4348 4.54095 16.4698 5.39634 18.0198 6.94675L19.0476 7.97487C19.2383 8.16599 19.4649 8.31761 19.7142 8.42106C19.9636 8.52451 20.2309 8.57776 20.5009 8.57776C20.7709 8.57776 21.0382 8.52451 21.2876 8.42106C21.5369 8.31761 21.7635 8.16599 21.9542 7.97487L22.982 6.94675C26.0901 3.84388 31.3566 3.85211 34.4606 6.94264Z"
+                                        fill="#F2EDED"
+                                    />
+                                </svg>
+                                <p class="comments__like-comment">
+                                    Like This Comment
+                                </p>
+                            </div>
+                            <div class="comments__bottom-wrap">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="46"
+                                    height="38"
+                                    viewBox="0 0 46 38"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M22.5359 3.63209C20.0738 1.57195 16.8511 0.428563 13.5063 0.428467C11.7359 0.430144 9.98342 0.750391 8.3496 1.37078C6.71578 1.99116 5.23291 2.89944 3.98633 4.04334C-1.33066 8.90224 -1.3284 16.5021 3.99085 21.3404L20.5587 36.4168C20.9429 37.0316 21.684 37.4285 22.5359 37.4285C22.8857 37.4254 23.2298 37.3477 23.5406 37.2016C23.8515 37.0556 24.1203 36.8452 24.3256 36.5875L41.081 21.3404C46.4002 16.5 46.4002 8.90224 41.0765 4.03511C39.8305 2.89332 38.3488 1.98689 36.7166 1.36793C35.0844 0.748972 33.3338 0.4297 31.5655 0.428467C28.2208 0.428964 24.9983 1.5723 22.5359 3.63209ZM37.8813 6.94264C41.4132 10.173 41.4154 15.219 37.8858 18.4329L22.5359 32.401L7.18602 18.4329C3.65642 15.219 3.65868 10.173 7.1815 6.95086C8.89884 5.39635 11.1449 4.54095 13.5063 4.54095C15.8676 4.54095 18.1047 5.39634 19.8085 6.94675L20.9383 7.97487C21.148 8.16599 21.397 8.31761 21.6712 8.42106C21.9453 8.52451 22.2391 8.57776 22.5359 8.57776C22.8327 8.57776 23.1265 8.52451 23.4007 8.42106C23.6748 8.31761 23.9238 8.16599 24.1335 7.97487L25.2633 6.94675C28.6799 3.84388 34.4692 3.85211 37.8813 6.94264Z"
+                                        fill="#F2EDED"
+                                    />
+                                </svg>
+                                <p class="comments__like-comment">
+                                    Dislike This Comment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments__btn-wrap">
+                        <button class="comments__button btn">Read more</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- -----------------------------------------Footer---------------------------------------------------------- -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <a href="" class="footer__logo-name">NIKAFILM</a>
+                            <p class="footer__desc">
+                                Publishing and Graphic design by Kasra Torabi
+                                Mansour, All Copy right Reserved
+                                <span class="footer__c">c</span>
+                            </p>
+                            <div class="footer__social-wrap">
+                                <a
+                                    target="_blank"
+                                    href="https://web.telegram.org/"
+                                >
+                                    <svg
+                                        class="footer__social-logo"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="45"
+                                        height="45"
+                                        viewBox="0 0 45 45"
+                                        fill="none"
+                                    >
+                                        <g opacity="0.45">
+                                            <path
+                                                d="M22.5 1.7998C33.9327 1.7998 43.2 11.0671 43.2 22.4998C43.2 33.9325 33.9327 43.1998 22.5 43.1998C11.0673 43.1998 1.79999 33.9325 1.79999 22.4998C1.79999 11.0671 11.0673 1.7998 22.5 1.7998ZM29.6406 30.9373C30.0213 29.7691 31.8051 18.1267 32.0256 15.8326C32.0922 15.1378 31.8726 14.6761 31.4424 14.47C30.9222 14.2198 30.1518 14.3449 29.2581 14.6671C28.0323 15.109 12.3615 21.7627 11.4561 22.1479C10.5975 22.5124 9.78569 22.9102 9.78569 23.4862C9.78569 23.8912 10.026 24.1189 10.6884 24.3556C11.3778 24.6013 13.1139 25.1278 14.139 25.4104C15.1263 25.6831 16.2504 25.4464 16.8804 25.0549C17.5482 24.64 25.2549 19.483 25.8084 19.0312C26.361 18.5794 26.802 19.1581 26.3502 19.6108C25.8984 20.0626 20.6082 25.1971 19.9107 25.9081C19.0638 26.7712 19.665 27.6658 20.2329 28.024C20.8818 28.4326 25.5483 31.5628 26.2512 32.065C26.9541 32.5672 27.6669 32.7949 28.3194 32.7949C28.9719 32.7949 29.3157 31.9354 29.6406 30.9373Z"
+                                                fill="#F2F4F3"
+                                            />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://www.linkedin.com/"
+                                >
+                                    <svg
+                                        class="footer__social-logo"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="45"
+                                        height="45"
+                                        viewBox="0 0 45 45"
+                                        fill="none"
+                                    >
+                                        <g opacity="0.45">
+                                            <path
+                                                d="M36.9 3.6001H8.09998C5.61598 3.6001 3.59998 5.6161 3.59998 8.1001V36.9001C3.59998 39.3841 5.61598 41.4001 8.09998 41.4001H36.9C39.384 41.4001 41.4 39.3841 41.4 36.9001V8.1001C41.4 5.6161 39.384 3.6001 36.9 3.6001ZM15.3 18.0001V35.1001H9.89998V18.0001H15.3ZM9.89998 13.0231C9.89998 11.7631 10.98 10.8001 12.6 10.8001C14.22 10.8001 15.237 11.7631 15.3 13.0231C15.3 14.2831 14.292 15.3001 12.6 15.3001C10.98 15.3001 9.89998 14.2831 9.89998 13.0231ZM35.1 35.1001H29.7C29.7 35.1001 29.7 26.7661 29.7 26.1001C29.7 24.3001 28.8 22.5001 26.55 22.4641H26.478C24.3 22.4641 23.4 24.3181 23.4 26.1001C23.4 26.9191 23.4 35.1001 23.4 35.1001H18V18.0001H23.4V20.3041C23.4 20.3041 25.137 18.0001 28.629 18.0001C32.202 18.0001 35.1 20.4571 35.1 25.4341V35.1001Z"
+                                                fill="#F2F4F3"
+                                            />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://www.instagram.com/"
+                                >
+                                    <svg
+                                        class="footer__social-logo"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="45"
+                                        height="45"
+                                        viewBox="0 0 45 45"
+                                        fill="none"
+                                    >
+                                        <g opacity="0.45">
+                                            <path
+                                                d="M14.4 2.7002C7.94701 2.7002 2.70001 7.9472 2.70001 14.4002V30.6002C2.70001 37.0532 7.94701 42.3002 14.4 42.3002H30.6C37.053 42.3002 42.3 37.0532 42.3 30.6002V14.4002C42.3 7.9472 37.053 2.7002 30.6 2.7002H14.4ZM33.3 9.9002C34.29 9.9002 35.1 10.7102 35.1 11.7002C35.1 12.6902 34.29 13.5002 33.3 13.5002C32.31 13.5002 31.5 12.6902 31.5 11.7002C31.5 10.7102 32.31 9.9002 33.3 9.9002ZM22.5 12.6002C27.963 12.6002 32.4 17.0372 32.4 22.5002C32.4 27.9632 27.963 32.4002 22.5 32.4002C17.037 32.4002 12.6 27.9632 12.6 22.5002C12.6 17.0372 17.037 12.6002 22.5 12.6002ZM22.5 14.4002C18.036 14.4002 14.4 18.0362 14.4 22.5002C14.4 26.9642 18.036 30.6002 22.5 30.6002C26.964 30.6002 30.6 26.9642 30.6 22.5002C30.6 18.0362 26.964 14.4002 22.5 14.4002Z"
+                                                fill="#F2F4F3"
+                                            />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 offset-xl-1">
+                            <h3 class="footer__title">Category</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="" class="footer__link">Live</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" class="footer__link">Blog</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" class="footer__link"
+                                        >Buy Ticket</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" class="footer__link">Movies</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" class="footer__link">Series</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" class="footer__link">Tv Shows</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3">
+                            <h3 class="footer__title">Support</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="" class="footer__link">About us</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" class="footer__link"
+                                        >Help Center</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" class="footer__link"
+                                        >Privacy Policy</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a href="" class="footer__link">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3">
+                            <h3 class="footer__title">Support</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item footer__item--email">
+                                    <label
+                                        for="footer__email-input"
+                                        class="footer__link"
+                                    >
+                                        Enter your Email to recive news and
+                                        trailers :
+                                    </label>
+                                </li>
+                                <li class="footer__item">
+                                    <form
+                                        action=""
+                                        method="post"
+                                        class="footer__form"
+                                    >
+                                        <input
+                                            class="footer__email"
+                                            type="email"
+                                            name=""
+                                            id="footer__email-input"
+                                            placeholder="Enter your Email here..."
+                                        />
+                                        <button
+                                            type="submit"
+                                            class="footer__submit"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="17"
+                                                height="17"
+                                                viewBox="0 0 17 17"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M0 16.8883L0 0L16.0192 8.44416L0 16.8883ZM1.68623 13.7218L11.6771 8.44416L1.68623 3.16656L1.68623 6.86088L6.74492 8.44416L1.68623 10.0274V13.7218ZM1.68623 13.7218L1.68623 3.16656L1.68623 10.0274V13.7218Z"
+                                                    fill="#F2F4F3"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

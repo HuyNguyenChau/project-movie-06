@@ -124,6 +124,7 @@ body {
 /* ----------------------------------------------------------Main---------------------------------------------------------- */
 /* ----------------------------------------------Hero------------------------------------------------------------ */
 .hero {
+    height: 100vh;
     overflow: hidden;
     margin-top: -92px;
     padding-bottom: 100px;
@@ -136,14 +137,15 @@ body {
         ),
         url(../img/banner.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 50% 100%;
     background-size: cover;
 }
 .hero__inner .row {
     flex-wrap: nowrap;
 }
+
 .hero__name {
-    margin-top: 390px;
+    margin-top: 200px;
     color: #fff;
     font-size: 4rem;
     font-weight: 500;
@@ -798,14 +800,13 @@ body {
     line-height: 25px;
 }
 .footer__c {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     text-align: center;
-    width: 24px;
-    height: 24px;
-    border: 1px solid #fff;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
     border-radius: 50%;
+    line-height: 12px;
     color: #fff;
 }
 .footer__social-wrap {
